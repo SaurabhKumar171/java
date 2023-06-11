@@ -4,25 +4,25 @@ import java.util.Scanner;
 
 public class CountOccurences {
   public static void main(String[] args) {
-       Scanner sc = new Scanner(System.in);
+    Scanner sc = new Scanner(System.in);
 
-       System.out.println("Enter no.");
-       int n = sc.nextInt();
-       
-      System.out.println("Enter no. to srch");
-       int s = sc.nextInt();
+    System.out.println("Enter no.");
+    long n = sc.nextLong();
+    
+   System.out.println("Enter no. to srch");
+    int s = sc.nextInt();
 
-       int c=0;
+    int c=0;
 
 
-       while(n>0){
-         int t= n%10;
+    while(n>0){
+      long t= n%10;
 
-         if(t==s){c++;}
+      if(t==s){c++;}
 
-         n=n/10;
-       }
+      n=n/10;
+    }
 
-         System.out.println(c);
+      System.out.println(c);
   }  
 }
