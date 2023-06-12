@@ -1,24 +1,25 @@
-package conditional_loops;
+package conditional_loops.Easy;
 
 import java.util.Scanner;
 
-public class sum {
-    
-  public static void main(String[] args) {
+public class largest {
+
+    public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
-   int sum=0;
+     int lar=0;
+     
         while(true){
          int n=sc.nextInt();
 
          if(n==0){
-            System.out.println(sum);
+            System.out.println(lar);
             break;
          }
 
          else{
-            sum +=n;
+           lar=Math.max(lar, n);
          }
       }
-  }
+    }
 
 }
